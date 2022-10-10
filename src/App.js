@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/ThreeJS" element={<Welcome/>} />
-        <Route path="/ThreeJS/shoe" element={<ShoeWrap/>} />
-        <Route path="/ThreeJS/cube" element={<Cube/>} />
-        <Route path="/ThreeJS/skin" element={<SkinWrap/>} />
+        <Route path={window.location.hostname.substring(0,9) === "localhost" ? '/' : "/ThreeJS"} element={<Welcome/>} />
+        <Route path={window.location.hostname.substring(0,9) === "localhost" ? '/shoe' : "/ThreeJS/shoe"} element={<ShoeWrap/>} />
+        <Route path={window.location.hostname.substring(0,9) === "localhost" ? '/cube' : "/ThreeJS/cube"} element={<Cube/>} />
+        <Route path={window.location.hostname.substring(0,9) === "localhost" ? '/skin' : "/ThreeJS/skin"} element={<SkinWrap/>} />
       </Routes>
     </Router>
   );
