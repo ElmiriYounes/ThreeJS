@@ -1,7 +1,6 @@
 {
   "name": "threejs",
   "version": "0.1.0",
-  "homepage": "https://elmiriyounes.github.io/ThreeJS",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.34.3",

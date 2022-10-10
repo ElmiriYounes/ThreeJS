@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 
 
 export function Xbox(props) {
-  const { nodes, materials } = useGLTF("/ThreeJS/xbox.glb");
+  const { nodes, materials } = useGLTF(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}xbox.glb`);
   
 
   return (
@@ -43,4 +43,4 @@ export function Xbox(props) {
   );
 }
 
-useGLTF.preload("/ThreeJS/xbox.glb");
+useGLTF.preload(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}xbox.glb`);

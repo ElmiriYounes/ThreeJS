@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export function Banana(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/ThreeJS/banana.glb");
+  const { nodes, materials, animations } = useGLTF(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}banana.glb`);
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -78,4 +78,4 @@ export function Banana(props) {
   );
 }
 
-useGLTF.preload("/ThreeJS/banana.glb");
+useGLTF.preload(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}banana.glb`);

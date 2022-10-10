@@ -8,14 +8,11 @@ title: Sydney Apartment (Night) - Custom Home
 
 import React, { useState } from "react";
 import { Html, useGLTF } from "@react-three/drei";
-import Box from "./Box";
 import styled from "styled-components";
 import { flex } from "../../Global.styles";
 import { BsSearch } from "react-icons/bs";
 import AnimSphere from "./AnimSphere";
-import { Honda } from "./Honda";
 import { Xbox } from "./Xbox";
-import { Banana } from "./Banana";
 
 const BtnLook = styled.div`
   background-color: rgb(0, 0, 0, 0.7);
@@ -57,7 +54,7 @@ const Content = styled.div`
 `;
 
 const Room = (props) => {
-  const { nodes, materials } = useGLTF("/ThreeJS/room.glb");
+  const { nodes, materials } = useGLTF(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}room.glb`);
   const [position, setPosition] = useState([2.5, -1.5, 1.5]);
 
   return (
@@ -333,6 +330,6 @@ const Room = (props) => {
   );
 };
 
-useGLTF.preload("/ThreeJS/room.glb");
+useGLTF.preload(`${window.location.hostname.substring(0,9) === "localhost" ? '/' : '/ThreeJS/'}room.glb`);
 
 export default Room;
