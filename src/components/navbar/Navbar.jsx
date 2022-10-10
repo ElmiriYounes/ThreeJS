@@ -5,7 +5,7 @@ import {AiFillHome} from 'react-icons/ai'
 import {GiRunningShoe,GiCube} from 'react-icons/gi'
 import { Link } from "react-router-dom";
 
-const items = [{icon:<AiFillHome/>,path:'/threejs'},{icon:<BiBody/>,path:'/threejs/skin'},{icon:<GiCube/>,path:'/threejs/cube'},{icon:<GiRunningShoe/>,path:'/threejs/shoe'}]
+const items = [{icon:<AiFillHome/>,path:'/ThreeJS'},{icon:<BiBody/>,path:'/ThreeJS/skin'},{icon:<GiCube/>,path:'/ThreeJS/cube'},{icon:<GiRunningShoe/>,path:'/ThreeJS/shoe'}]
 
 const Navbar = () => {
   return <Items>
