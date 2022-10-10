@@ -6,11 +6,8 @@ source: https://sketchfab.com/3d-models/xbox-one-s-3fa2c800fbd246d3924704fdf3bde
 title: Xbox One S
 */
 
-import React, { useRef, useState } from "react";
-import { Html, useGLTF } from "@react-three/drei";
-import styled from "styled-components";
-import { flex } from "../../Global.styles";
-import { useFrame } from "@react-three/fiber";
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
 
 export function Xbox(props) {

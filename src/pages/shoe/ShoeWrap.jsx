@@ -1,4 +1,4 @@
-import { Html, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense, useEffect, useState } from "react";
 import Shoe from "../../components/threejs/Shoe";
@@ -42,8 +42,6 @@ const ShoeWrap = () => {
 
   useEffect(() => {
     setColor(colors[currentColor]);
-    console.log(currentColor);
-    console.log(colors[currentColor]);
   }, [currentColor]);
 
   return (
