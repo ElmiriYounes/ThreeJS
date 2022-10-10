@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/threejs" element={<Welcome/>} />
-        <Route path="/threejs/shoe" element={<ShoeWrap/>} />
-        <Route path="/threejs/cube" element={<Cube/>} />
-        <Route path="/threejs/skin" element={<SkinWrap/>} />
+        <Route path="/ThreeJS" element={<Welcome/>} />
+        <Route path="/ThreeJS/shoe" element={<ShoeWrap/>} />
+        <Route path="/ThreeJS/cube" element={<Cube/>} />
+        <Route path="/ThreeJS/skin" element={<SkinWrap/>} />
       </Routes>
     </Router>
   );
