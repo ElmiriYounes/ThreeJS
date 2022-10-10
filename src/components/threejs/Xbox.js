@@ -14,7 +14,7 @@ import { useFrame } from "@react-three/fiber";
 
 
 export function Xbox(props) {
-  const { nodes, materials } = useGLTF("/xbox.glb");
+  const { nodes, materials } = useGLTF("/ThreeJS/xbox.glb");
   
 
   return (
@@ -46,4 +46,4 @@ export function Xbox(props) {
   );
 }
 
-useGLTF.preload("/xbox.glb");
+useGLTF.preload("/ThreeJS/xbox.glb");

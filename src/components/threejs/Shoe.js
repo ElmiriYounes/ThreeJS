@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 const Shoe = (props) => {
   const group = useRef();
   const [color, setColor] = useState()
-  const { nodes, materials, animations } = useGLTF("/shoes_test.glb");
+  const { nodes, materials, animations } = useGLTF("/ThreeJS/shoes_test.glb");
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -238,6 +238,6 @@ const Shoe = (props) => {
   );
 };
 
-useGLTF.preload("/shoes_test.glb");
+useGLTF.preload("/ThreeJS/shoes_test.glb");
 
 export default Shoe;

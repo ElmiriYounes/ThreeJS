@@ -57,7 +57,7 @@ const Content = styled.div`
 `;
 
 const Room = (props) => {
-  const { nodes, materials } = useGLTF("/room.glb");
+  const { nodes, materials } = useGLTF("/ThreeJS/room.glb");
   const [position, setPosition] = useState([2.5, -1.5, 1.5]);
 
   return (
@@ -333,6 +333,6 @@ const Room = (props) => {
   );
 };
 
-useGLTF.preload("/room.glb");
+useGLTF.preload("/ThreeJS/room.glb");
 
 export default Room;
