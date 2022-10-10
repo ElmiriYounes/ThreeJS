@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "homepage": "https://elmiriyounes.github.io/ThreeJS",
   "icons": [
     {
       "src": "favicon.ico",
