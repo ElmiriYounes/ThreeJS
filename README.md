@@ -26,11 +26,6 @@ This is one of my FrontEnd React project, it is a demo of animations skills usin
     npm install
     ```
 
-* Remove line 4 of package.json (from the root folder):
-    ```gitbash
-    remove this line: homepage": "https://elmiriyounes.github.io/ThreeJS",
-    ```
-
 * Get started (from the root folder):
     ```gitbash
     npm start
